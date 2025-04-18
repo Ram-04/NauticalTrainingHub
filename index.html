@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad Marítima del Caribe</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚓</text></svg>"> 
+    
+    <!-- Google Fonts -->
+
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static\css\style.css">
+    </head>
+    
+<body>
+<!--{% extends "layout.html" %}
+{% block title %}Universidad Marítima del Caribe - Ingeniería Marina{% endblock %}
+{% block content %}-->
+<!-- Hero Sección -->
+
+<header class="header">
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 12H5V22H19V12H22L12 2Z" fill="#0077b6"/>
+                    <path d="M12 22V16M12 12V16M8 16H16" stroke="#003559" stroke-width="2"/>
+                    <circle cx="12" cy="8" r="2" fill="#f9a826"/>
+                </svg>
+                <span>UMC Ingeniería Marítima</span>
+            </a>
+            
+            <div class="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="navbar-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                </li>
+                
+                <!-- Admisión y Registro (Dropdown) -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="admisionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Admisión <i class="fas fa-angle-down ms-1"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="admisionDropdown">
+                        <li><a class="dropdown-item" href="admision.html">Proceso de Admisión</a></li>
+                        <li><a class="dropdown-item" href="registro.html">Registro QR</a></li>
+                    </ul>
+                </li>
+                <!-- Vida Académica (Dropdown) -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="academicaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Vida Académica <i class="fas fa-angle-down ms-1"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="academicaDropdown">
+                        <li><a class="dropdown-item" href="historia.html">Historia</a></li>
+                        <li><a class="dropdown-item" href="vida_cadete.html">Vida del Cadete</a></li>
+                        <li><a class="dropdown-item" href="pasantias.html">Pasantías</a></li>
+                        <li><a class="dropdown-item" href="idiomas.html">Programa de Idiomas</a></li>
+                    </ul>
+                </li>
+                
+                <!-- Uniformes -->
+                <li class="nav-item">
+                    <a href="uniforme.html" class="nav-link">Uniforme</a>
+                </li>
+                
+                <!-- Recursos (Dropdown) -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="recursosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Recursos <i class="fas fa-angle-down ms-1"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="recursosDropdown">
+                        <li><a class="dropdown-item" href="biblioteca.html">Biblioteca</a></li>
+                        <li><a class="dropdown-item" href="games.html">Simulaciones</a></li>
+                    </ul>
+                </li>
+                
+                <!-- Noticias y Eventos (Dropdown) -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="noticiasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Noticias y Eventos <i class="fas fa-angle-down ms-1"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="noticiasDropdown">
+                        <li><a class="dropdown-item" href="noticias.html">Noticias</a></li>
+                        <li><a class="dropdown-item" href="jornada.html">Jornadas</a></li>
+                    </ul>
+                </li>
+                
+                <!-- Contacto -->
+                <li class="nav-item">
+                    <a href="sugerencias.html" class="nav-link">Sugerencias</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title fade-in">Ingeniería Maritima</h1>
+            <p class="hero-description fade-in">Formando profesionales marítimos de excelencia con los conocimientos técnicos para operar y mantener sistemas de propulsión, electricidad y automatización en embarcaciones modernas.</p>
+            <div class="hero-btn-group">
+                <a href="admision.html" class="btn btn-accent slide-up">Proceso de Admisión</a>
+                <a href="registro.html" class="btn btn-outline slide-up">Registro QR</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Características del Programa</h2>
+        
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="feature-box animate-on-scroll" data-animation="fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-ship"></i>
+                    </div>
+                    <h3 class="feature-title">Enfoque Práctico</h3>
+                    <p class="feature-text">Formación técnica especializada con simuladores de última generación y prácticas en embarcaciones reales.</p>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="feature-box animate-on-scroll" data-animation="fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <h3 class="feature-title">Reconocimiento Internacional</h3>
+                    <p class="feature-text">Titulación reconocida por la Organización Marítima Internacional (OMI) que permite trabajar en cualquier buque mercante del mundo.</p>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="feature-box animate-on-scroll" data-animation="fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="feature-title">Tecnología Avanzada</h3>
+                    <p class="feature-text">Formación en los sistemas más modernos de propulsión, automatización y gestión energética en embarcaciones.</p>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="feature-box animate-on-scroll" data-animation="fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="feature-title">Formación Integral</h3>
+                    <p class="feature-text">Desarrollo académico, técnico y personal con énfasis en liderazgo, trabajo en equipo y toma de decisiones.</p>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="feature-box animate-on-scroll" data-animation="fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="feature-title">Alianzas Estratégicas</h3>
+                    <p class="feature-text">Convenios con empresas navieras nacionales e internacionales para pasantías y oportunidades laborales.</p>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="feature-box animate-on-scroll" data-animation="fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="feature-title">Investigación</h3>
+                    <p class="feature-text">Participación en proyectos de investigación en tecnologías marítimas sostenibles y eficiencia energética.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Wave Divider -->
+<div class="wave-divider"></div>
+
+<!-- Programas -->
+<section class="section bg-light">
+    <div class="container">
+        <h2 class="section-title">Plan de Estudios</h2>
+        <p class="section-description">Nuestro programa de Ingeniería Marina está diseñado según los más altos estándares internacionales, combinando teoría, práctica y formación en valores profesionales.</p>
+        
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title m-0">Fase Básica</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Fundamentos de ingeniería, matemáticas, física, química y conocimientos básicos de navegación y sistemas marítimos.</p>
+                        <ul>
+                            <li>Matemáticas aplicadas</li>
+                            <li>Física y mecánica</li>
+                            <li>Química general</li>
+                            <li>Introducción a la ingeniería naval</li>
+                            <li>Dibujo técnico</li>
+                            <li>Informática básica</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title m-0">Fase Profesional</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Conocimientos específicos de ingeniería marina, sistemas de propulsión, electrónica y mantenimiento de embarcaciones.</p>
+                        <ul>
+                            <li>Sistemas de propulsión</li>
+                            <li>Electrotecnia marina</li>
+                            <li>Sistemas auxiliares</li>
+                            <li>Refrigeración y climatización</li>
+                            <li>Automatización naval</li>
+                            <li>Seguridad marítima</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title m-0">Fase Especializada</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Especialización en áreas específicas de la ingeniería marina y preparación para la inserción profesional.</p>
+                        <ul>
+                            <li>Gestión de operaciones</li>
+                            <li>Mantenimiento predictivo</li>
+                            <li>Sistemas electrónicos integrados</li>
+                            <li>Tecnologías sostenibles</li>
+                            <li>Prácticas profesionales</li>
+                            <li>Proyecto final</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Llamado -->
+<section class="section cta-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mb-4 mb-lg-0">
+                <h2 class="cta-title">¿Listo para embarcarte en esta aventura?</h2>
+                <p class="cta-text">El mundo marítimo ofrece oportunidades globales y una carrera apasionante. Da el primer paso hacia tu futuro como ingeniero marino.</p>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <a href="admision.html" class="btn btn-accent">Conoce el Proceso de Admisión</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Latest News -->
+<section class="section bg-light">
+    <div class="container">
+        <h2 class="section-title">Últimas Noticias</h2>
+        
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card news-card">
+                    <div class="card-img-container">
+                        <div class="img-placeholder">
+                            <i class="fas fa-handshake fa-3x"></i>
+                            <span>Imagen de noticia</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="news-date">
+                            <i class="far fa-calendar-alt me-2"></i> 15 de marzo, 2024
+                        </div>
+                        <h3 class="card-title">Nuevo convenio con naviera internacional</h3>
+                        <p class="card-text">La UMC firma un acuerdo estratégico con una de las principales navieras para facilitar prácticas profesionales en buques de carga.</p>
+                        <a href="noticias.html" class="btn btn-sm btn-outline-primary mt-2">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card news-card">
+                    <div class="card-img-container">
+                        <div class="img-placeholder">
+                            <i class="fas fa-award fa-3x"></i>
+                            <span>Imagen de noticia</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="news-date">
+                            <i class="far fa-calendar-alt me-2"></i> 2 de marzo, 2024
+                        </div>
+                        <h3 class="card-title">Reconocimiento a la excelencia académica</h3>
+                        <p class="card-text">Estudiantes de Ingeniería Marina reciben reconocimiento internacional por su proyecto de eficiencia energética en buques.</p>
+                        <a href="noticias.html" class="btn btn-sm btn-outline-primary mt-2">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card news-card">
+                    <div class="card-img-container">
+                        <div class="img-placeholder">
+                            <i class="fas fa-laptop-code fa-3x"></i>
+                            <span>Imagen de noticia</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="news-date">
+                            <i class="far fa-calendar-alt me-2"></i> 20 de febrero, 2024
+                        </div>
+                        <h3 class="card-title">Inauguración de nuevo simulador</h3>
+                        <p class="card-text">La facultad estrena un moderno simulador de sala de máquinas que reproduce con exactitud los sistemas de propulsión más avanzados.</p>
+                        <a href="noticias.html" class="btn btn-sm btn-outline-primary mt-2">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-4">
+            <a href="noticias.html" class="btn btn-outline-primary">Ver todas las noticias</a>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonios -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Testimonios de Egresados</h2>
+        
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <div class="testimonial-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>Mi formación en la UMC me permitió desarrollarme profesionalmente en embarcaciones de todo el mundo. La combinación de teoría sólida y práctica intensiva fue fundamental para mi éxito en la industria marítima internacional.</p>
+                    <div class="testimonial-info">
+                        <div class="testimonial-img">
+                            <i class="fas fa-user-circle fa-3x"></i>
+                        </div>
+                        <div class="testimonial-author">
+                            <h4>Ing. Carlos Martínez</h4>
+                            <p>Jefe de Máquinas, Naviera Pacífico</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <div class="testimonial-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>Los conocimientos avanzados en automatización y sistemas electrónicos que recibí en la UMC han sido cruciales para adaptarme rápidamente a las nuevas tecnologías que constantemente se implementan en los buques modernos.</p>
+                    <div class="testimonial-info">
+                        <div class="testimonial-img">
+                            <i class="fas fa-user-circle fa-3x"></i>
+                        </div>
+                        <div class="testimonial-author">
+                            <h4>Ing. Ana Rodríguez</h4>
+                            <p>Oficial de Máquinas, Cruceros Caribe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+{% endblock %}
+</html>
