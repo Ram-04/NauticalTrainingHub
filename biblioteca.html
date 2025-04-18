@@ -23,6 +23,87 @@
     </head>
 
 <body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container navbar-container">
+                <a href="index.html" class="navbar-logo">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L2 12H5V22H19V12H22L12 2Z" fill="#0077b6"/>
+                        <path d="M12 22V16M12 12V16M8 16H16" stroke="#003559" stroke-width="2"/>
+                        <circle cx="12" cy="8" r="2" fill="#f9a826"/>
+                    </svg>
+                    <span>UMC Ingeniería Marítima</span>
+                </a>
+                
+                <div class="navbar-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <ul class="navbar-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Inicio</a>
+                    </li>
+                    
+                    <!-- Admisión y Registro (Dropdown) -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="admisionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Admisión <i class="fas fa-angle-down ms-1"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="admisionDropdown">
+                            <li><a class="dropdown-item" href="admision.html">Proceso de Admisión</a></li>
+                            <li><a class="dropdown-item" href="registro.html">Registro QR</a></li>
+                        </ul>
+                    </li>
+                    <!-- Vida Académica (Dropdown) -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="academicaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Vida Académica <i class="fas fa-angle-down ms-1"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="academicaDropdown">
+                            <li><a class="dropdown-item" href="historia.html">Historia</a></li>
+                            <li><a class="dropdown-item" href="vida_cadete.html">Vida del Cadete</a></li>
+                            <li><a class="dropdown-item" href="pasantias.html">Pasantías</a></li>
+                            <li><a class="dropdown-item" href="idiomas.html">Programa de Idiomas</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Uniformes -->
+                    <li class="nav-item">
+                        <a href="uniforme.html" class="nav-link">Uniforme</a>
+                    </li>
+                    
+                    <!-- Recursos (Dropdown) -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="recursosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Recursos <i class="fas fa-angle-down ms-1"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="recursosDropdown">
+                            <li><a class="dropdown-item" href="biblioteca.html">Biblioteca</a></li>
+                            <li><a class="dropdown-item" href="games.html">Simulaciones</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Noticias y Eventos (Dropdown) -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="noticiasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Noticias y Eventos <i class="fas fa-angle-down ms-1"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="noticiasDropdown">
+                            <li><a class="dropdown-item" href="noticias.html">Noticias</a></li>
+                            <li><a class="dropdown-item" href="jornada.html">Jornadas</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Contacto -->
+                    <li class="nav-item">
+                        <a href="sugerencias.html" class="nav-link">Sugerencias</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     
     <!-- Biblioteca Hero Section -->
 <section class="hero">
@@ -292,4 +373,4 @@
     </div>
 </section>
 </body>
-{% endblock %}
+</html>
